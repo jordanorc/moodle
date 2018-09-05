@@ -26,7 +26,7 @@ RUN { \
 } > /usr/local/etc/php/conf.d/uploads.ini
 
 # ext curl
-RUN apt-get install -y --no-install-recommends libcurl4-openssl-dev
+RUN apt-get install -y --no-install-recommends libcurl4-openssl-dev cron
 RUN docker-php-ext-install curl
 
 # ext gd
